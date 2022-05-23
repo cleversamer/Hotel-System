@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controllers.CustomerController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="50.0" prefWidth="150.0" spacing="10.0">
+            <children>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label prefWidth="40.0" text="ID" />
+                        <TextField fx:id="fieldId" prefWidth="110.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label prefWidth="40.0" text="Name" />
+                        <TextField fx:id="fieldName" prefWidth="110.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label prefWidth="40.0" text="Age" />
+                        <TextField fx:id="fieldAge" prefWidth="110.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label prefWidth="40.0" text="Rooms" />
+                        <TextField fx:id="fieldRooms" disable="true" editable="false" prefWidth="110.0" />
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" prefWidth="110.0" text="Save" />
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="201.0" layoutY="14.0" prefWidth="159.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" text="Available Rooms" />
+                <ListView prefHeight="224.0" prefWidth="100.0" />
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="388.0" layoutY="14.0" prefWidth="159.0" spacing="10.0">
+            <children>
+                <Label text="Selected Room">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <VBox spacing="10.0">
+                    <children>
+                        <Label text="ID:" />
+                        <Label text="Status:" />
+                        <Label text="Owner:" />
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" prefWidth="100.0" text="Reserve">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="583.0" layoutY="14.0" prefWidth="159.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" text="My Rooms" />
+                <ListView prefHeight="224.0" prefWidth="100.0" />
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="776.0" layoutY="14.0" prefWidth="159.0" spacing="10.0">
+            <children>
+                <Label text="Selected Room">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <VBox spacing="10.0">
+                    <children>
+                        <Label text="ID:" />
+                        <Label text="Status:" />
+                        <Label text="Owner:" />
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" prefWidth="100.0" text="Checkout">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <HBox layoutX="716.0" layoutY="290.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" prefWidth="90.0" text="Refresh" />
+                <Button mnemonicParsing="false" prefWidth="90.0" text="Close" />
+            </children>
+        </HBox>
+    </children>
+</Pane>
